@@ -1,0 +1,14 @@
+{
+    "JobOpenings": [
+        {
+            "id": 1,
+            "jobTitle": "Desenvolvedor FullStack",
+            "companyName": "Itau",
+            "applicationDate": "2023/02/05",
+            "applicationWebsite": "Gupy",
+            "techRecruiter": "Fernanda Pinheiro" ,
+            "category":  "Teste de avaliação",
+            "applicationUrl": "https://vdev.gupy.io/candidates/applications/392296249"
+        }
+    ]
+}
