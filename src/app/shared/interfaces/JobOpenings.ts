@@ -1,11 +1,12 @@
 export interface JobOpenings {
-    id?: number,
+    id?: number
     jobTitle: string,
     companyName: string,
     applicationDate: string,
-    applicationWebsite: string,
+    applicationWebSite: string,
     techRecruiter?: string,
-    category: string,
-    applicationUrl: string
-
+    stage: string,
+    experienceLevel: string
+    applicationUrl: string,
+    location: string,
 }

@@ -1,0 +1,119 @@
+<main>
+  <form [formGroup]="jobForm" #formDir="ngForm">
+    <h2>Preencha as características da vaga</h2>
+    <div class="form-group">
+      <div class="input-container">
+        <label for="name">Nome da Vaga</label>
+        <input
+          type="text"
+          autocomplete="additional-name"
+          placeholder="Digite o nome da vaga"
+          formControlName="jobTitle"
+          required
+        />
+        <div *ngIf="jobTitle.invalid && formDir.submitted">
+          <p class="validate-form">Campo obrigatório</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="company">Nome da Empresa</label>
+        <input
+          type="text"
+          autocomplete="additional-name"
+          placeholder="Digite o nome da empresa"
+          formControlName="companyName"
+          required
+        />
+        <div *ngIf="companyName.invalid && formDir.submitted">
+          <p class="validate-form">Campo obrigatório</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-container">
+        <label for="company">Site da vaga</label>
+        <input
+          type="text"
+          autocomplete="additional-name"
+          placeholder="Site onde a vaga está sendo aplicada"
+          formControlName="applicationWebSite"
+          required
+        />
+        <div *ngIf="applicationWebSite.invalid && formDir.submitted">
+          <p class="validate-form">Campo obrigatório</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="date">Data de candidatura</label>
+        <input
+          type="date"
+          autocomplete="additional-name"
+          formControlName="applicationDate"
+          required
+        />
+        <div *ngIf="applicationDate.invalid && formDir.submitted">
+          <p class="validate-form">Campo obrigatório</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-container">
+        <label for="stage">Etapa da vaga</label>
+        <select formControlName="stage">
+          <option value="" disabled selected hidden>Selecione uma opção</option>
+          <option value="candidatura" selected>Candidatura</option>
+          <option value="finalizado">Finalizado</option>
+        </select>
+        <div *ngIf="stage.invalid && formDir.submitted">
+          <p class="validate-form">Campo obrigatório</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="experience">Experiência da vaga</label>
+        <input
+          type="text"
+          formControlName="experienceLevel"
+          placeholder="Ex: Estágio, Junior, Pleno,"
+        />
+        <div *ngIf="experienceLevel.invalid && formDir.submitted">
+          <p class="validate-form">Campo obrigatório</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-container">
+        <label for="location">Localidade da vaga</label>
+        <input
+          type="text"
+          placeholder="Ex: Remoto, Presencial"
+          formControlName="location"
+        />
+      </div>
+      <div class="input-container">
+        <label for="recruiter">Nome do Recrutador</label>
+        <input
+          type="text"
+          autocomplete="additional-name"
+          placeholder="Nome do recrutador"
+          formControlName="techRecruiter"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-container">
+        <label for="location">URL da vaga</label>
+        <input
+          type="text"
+          placeholder="Ex: http://gupy.com/estagiofullstack"
+          formControlName="applicationUrl"
+        />
+      </div>
+    </div>
+    <div class="actions">
+      <button mat-raised-button color="primary" (click)="submit()">
+        Enviar
+      </button>
+      <button mat-raised-button>Cancelar</button>
+    </div>
+  </form>
+</main>

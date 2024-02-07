@@ -1,12 +1,76 @@
 .mat-tab-group {
-    padding: 2rem;
-    
+    padding: 1rem;
+}
+
+i {
+    color: #333;
+    font-size: 1.11rem;
 }
 
 .container-card {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: flex-start;
     padding: 2%;
+
 }
 
 .card {
     margin: 10px;
+    width: 300px;
 }
+
+.title-job {
+    font-size: 1.11rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.title-job:hover {
+    color: #44749e; 
+    font-style: italic; 
+}
+
+.company {
+    background-color: orange;
+    padding: .25rem .7rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    color: #0a0a0a;
+}
+
+.company-webSite {
+    background-color: #525FE1;
+    padding: .25rem .7rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    color: #161616;
+}
+
+.date {
+    background-color: #09b1ff;
+    padding: .15rem .3rem;
+    color: #161616;
+}
+
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.grid-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.del-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: rgb(219, 55, 55);
+}
+

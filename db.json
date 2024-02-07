@@ -1,14 +1,40 @@
 {
-    "JobOpenings": [
-        {
-            "id": 1,
-            "jobTitle": "Desenvolvedor FullStack",
-            "companyName": "Itau",
-            "applicationDate": "2023/02/05",
-            "applicationWebsite": "Gupy",
-            "techRecruiter": "Fernanda Pinheiro" ,
-            "category":  "Teste de avaliação",
-            "applicationUrl": "https://vdev.gupy.io/candidates/applications/392296249"
-        }
-    ]
+  "JobOpenings": [
+    {
+      "id": "1",
+      "jobTitle": "Desenvolvedor FullStack",
+      "companyName": "Itau",
+      "applicationDate": "2023/02/05",
+      "applicationWebSite": "Gupy",
+      "techRecruiter": "Fernanda Pinheiro",
+      "stage": "Finalizado",
+      "experienceLevel": "Estágio",
+      "location": "Presencial",
+      "applicationUrl": "https://vdev.gupy.io/candidates/applications/392296249"
+    },
+    {
+      "id": "7af2",
+      "jobTitle": "Desenvolvedor BackEnd",
+      "companyName": "Google",
+      "applicationDate": "2024-02-06",
+      "applicationWebSite": "Eureca",
+      "stage": "candidatura",
+      "experienceLevel": "Estágio",
+      "location": "Remoto",
+      "techRecruiter": "Paulo Andrade",
+      "applicationUrl": ""
+    },
+    {
+      "id": "53ca",
+      "jobTitle": "Consultor de Vendas",
+      "companyName": "Apple",
+      "applicationDate": "2024-02-05",
+      "applicationWebSite": "Linkedin",
+      "stage": "candidatura",
+      "experienceLevel": "Senior",
+      "location": "Remoto",
+      "techRecruiter": "",
+      "applicationUrl": ""
+    }
+  ]
 }

@@ -1,25 +1,38 @@
 <mat-tab-group mat-align-tabs="start">
   <mat-tab label="Candidaturas">
-    <div class="container-card" fxLayout="row" fxLayoutAlign="start center">
-      <div class="card">
+    <div class="container-card">
+      <div class="card" *ngFor="let job of jobOpenings">
         <mat-card class="example-card">
-          <mat-card-header> </mat-card-header>
-
           <mat-card-content>
-            <p>
-              The Shiba Inu is the smallest of the six original and distinct
-              spitz breeds of dog from Japan. A small, agile dog that copes very
-              well with mountainous terrain, the Shiba Inu was originally bred
-              for hunting.
-            </p>
+            <div class="group">
+              <a routerLink="" class="title-job">{{ job.jobTitle }}</a>
+              <button class="material-icons del-btn">close</button>
+            </div>
+            <div class="group">
+              <span class="company">{{ job.companyName }}</span>
+              <span class="grid-icon">
+                <i class="material-icons">{{ getIcon(job.location) }}</i
+                >{{ job.location }}</span
+              >
+            </div>
+
+            <div class="group">
+              <span class="company-webSite">{{ job.applicationWebSite }}</span>
+              <span class="grid-icon"
+                ><i class="material-icons experience"> work </i
+                >{{ job.experienceLevel }}</span
+              >
+            </div>
+
+            <div class="group">
+              <span class="date">{{
+                job.applicationDate | date : "dd/MM/yyyy"
+              }}</span>
+            </div>
           </mat-card-content>
-          <mat-card-actions>
-            <button mat-button color="warn">Excluir</button>
-            <button mat-button color="primary">Editar</button>
-          </mat-card-actions>
         </mat-card>
       </div>
     </div>
   </mat-tab>
-  <mat-tab label="Candiaturas Finalizadas">Content 2</mat-tab>
+  <mat-tab label="Candidaturas Finalizadas">Content 2</mat-tab>
 </mat-tab-group>

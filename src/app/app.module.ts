@@ -22,8 +22,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { HomeComponent } from './pages/home/home.component';
 import { MatTabsModule } from '@angular/material/tabs';
-
-
+import { FormDataComponent } from './components/form-data/form-data.component';
+import { MatSelectModule } from '@angular/material/select';
+import { FormComponent } from './pages/form/form.component';
 
 
 @NgModule({
@@ -33,6 +34,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     FooterComponent,
     HomeComponent,
     ListJobsComponent,
+    FormDataComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
