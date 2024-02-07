@@ -1,7 +1,8 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter} from '@angular/core';
 import { JobOpenings } from 'src/app/shared/interfaces/JobOpenings';
-import { JobOpeningsService } from 'src/app/service/job-openings.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-form-data',
@@ -10,22 +11,24 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class FormDataComponent implements OnInit {
   @Output() submited = new EventEmitter<JobOpenings>()
+  @Input() jobData: JobOpenings | null = null
+  @Input() title: string = ''
 
   jobForm!: FormGroup
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
     this.jobForm = new FormGroup( {
-      jobTitle: new FormControl('', Validators.required),
-      companyName: new FormControl('',Validators.required),
-      applicationDate: new FormControl('', Validators.required),
-      applicationWebSite: new FormControl('', Validators.required),
-      stage: new FormControl('', Validators.required),
-      experienceLevel: new FormControl('', Validators.required),
-      location: new FormControl(''),
-      techRecruiter: new FormControl(''),
-      applicationUrl: new FormControl(''),
+      jobTitle: new FormControl(this.jobData ? this.jobData.jobTitle : '', Validators.required),
+      companyName: new FormControl(this.jobData ? this.jobData.companyName : '',Validators.required),
+      applicationDate: new FormControl(this.jobData ? this.jobData.applicationDate : '', Validators.required),
+      applicationWebSite: new FormControl(this.jobData ? this.jobData.applicationWebSite : '', Validators.required),
+      stage: new FormControl(this.jobData ? this.jobData.stage : '', Validators.required),
+      experienceLevel: new FormControl(this.jobData ? this.jobData.experienceLevel : '', Validators.required),
+      location: new FormControl(this.jobData ? this.jobData.location : ''),
+      techRecruiter: new FormControl(this.jobData ? this.jobData.techRecruiter : ''),
+      applicationUrl: new FormControl(this.jobData ? this.jobData.applicationUrl : ''),
     })
   }
 
@@ -60,6 +63,10 @@ export class FormDataComponent implements OnInit {
     }
 
     this.submited.emit(this.jobForm.value)
+  }
+
+  cancel() {
+    this.route.navigate(['/'])
   }
 
 }

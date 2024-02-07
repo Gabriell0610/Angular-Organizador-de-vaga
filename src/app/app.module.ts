@@ -25,6 +25,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { FormDataComponent } from './components/form-data/form-data.component';
 import { MatSelectModule } from '@angular/material/select';
 import { FormComponent } from './pages/form/form.component';
+import { EditJobComponent } from './components/edit-job/edit-job.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { FormComponent } from './pages/form/form.component';
     ListJobsComponent,
     FormDataComponent,
     FormComponent,
+    EditJobComponent,
   ],
   imports: [
     BrowserModule,

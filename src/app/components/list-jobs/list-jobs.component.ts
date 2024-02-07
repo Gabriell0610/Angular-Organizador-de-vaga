@@ -15,10 +15,7 @@ export class ListJobsComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobOpeningService.getJob().subscribe((vacancy) => {
-      this.jobOpenings = vacancy.map((job) => {
-        return job
-      })
-      console.log(this.jobOpenings)
+      this.jobOpenings = vacancy
     })
   }
 
@@ -28,6 +25,15 @@ export class ListJobsComponent implements OnInit {
     } else {
       return 'computer'; // Ícone para vagas remotas ou híbridas
     }
+  }
+
+  delCard(id: any) {
+    this.jobOpeningService.deljob(id).subscribe(() =>{
+      this.jobOpeningService.showMensage('Vaga deletada com sucesso!')
+    })
+    this.jobOpenings = this.jobOpenings.filter((job) => {
+      return job.id !== id
+    })
   }
 
 }

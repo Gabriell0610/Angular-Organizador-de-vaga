@@ -74,3 +74,8 @@ i {
     color: rgb(219, 55, 55);
 }
 
+.edit {
+    cursor: pointer;
+    color: #333;
+}
+

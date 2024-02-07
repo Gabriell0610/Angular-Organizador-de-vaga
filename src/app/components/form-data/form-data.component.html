@@ -1,6 +1,6 @@
 <main>
   <form [formGroup]="jobForm" #formDir="ngForm">
-    <h2>Preencha as características da vaga</h2>
+    <h2>{{title}}</h2>
     <div class="form-group">
       <div class="input-container">
         <label for="name">Nome da Vaga</label>
@@ -113,7 +113,7 @@
       <button mat-raised-button color="primary" (click)="submit()">
         Enviar
       </button>
-      <button mat-raised-button>Cancelar</button>
+      <button mat-raised-button (click)="cancel()">Cancelar</button>
     </div>
   </form>
 </main>

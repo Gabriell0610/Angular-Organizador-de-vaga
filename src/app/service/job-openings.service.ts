@@ -24,6 +24,14 @@ export class JobOpeningsService {
     return this.http.get<JobOpenings[]>(this.baseUrl)
   }
 
+  getById(id: any):Observable<JobOpenings> {
+    return this.http.get<JobOpenings>(`${this.baseUrl}/${id}`)
+  }
+
+  deljob(id: any):Observable<JobOpenings> {
+    return this.http.delete<JobOpenings>(`${this.baseUrl}/${id}`)
+  }
+
 
   showMensage(msg: string) {
     this.snackBar.open(msg, '',{

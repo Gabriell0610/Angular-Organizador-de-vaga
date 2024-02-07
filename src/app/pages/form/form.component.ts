@@ -9,6 +9,7 @@ import { JobOpeningsService } from 'src/app/service/job-openings.service';
 })
 export class FormComponent implements OnInit {
   jobOpenings!: JobOpenings
+  title = 'Preencha as características da vaga'
 
   constructor(private jobOpeningsService: JobOpeningsService) { }
 
