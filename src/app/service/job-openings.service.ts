@@ -32,6 +32,10 @@ export class JobOpeningsService {
     return this.http.delete<JobOpenings>(`${this.baseUrl}/${id}`)
   }
 
+  updateJob(id: any, jobOpenings: JobOpenings):Observable<JobOpenings>{
+    return this.http.put<JobOpenings>(`${this.baseUrl}/${id}`, jobOpenings)
+  }
+
 
   showMensage(msg: string) {
     this.snackBar.open(msg, '',{
