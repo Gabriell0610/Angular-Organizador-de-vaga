@@ -24,14 +24,23 @@
     font-size: 1.7rem;
 }
 
-/* .nav-list {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .nav-list a {
+        font-size: .9rem;
+    }
+
+    .title-header {
+        font-size: 1.1rem;
+    }
 }
 
-.nav-list a {
-    font-size: 1.1rem;
-} */
+@media screen and (min-width: 425px) and (max-width: 480px) {
+    .nav-list a {
+        font-size: 1rem;
+    }
 
+    .title-header {
+        font-size: 1.3rem;
+    }
+}
 

@@ -5,7 +5,7 @@
         <mat-card class="example-card">
           <mat-card-content>
             <div class="group">
-              <a routerLink="job/edit/{{ job.id }}" class="title-job">{{
+              <a routerLink="job/table/{{job.id}}" class="title-job">{{
                 job.jobTitle
               }}</a>
               <button class="material-icons del-btn" (click)="delCard(job.id)">

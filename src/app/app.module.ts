@@ -9,6 +9,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListJobsComponent } from './components/list-jobs/list-jobs.component';
+import { FormDataComponent } from './components/form-data/form-data.component';
+import { MatSelectModule } from '@angular/material/select';
+import { FormComponent } from './pages/form/form.component';
+import { EditJobComponent } from './components/edit-job/edit-job.component';
+import { JobTableComponent } from './pages/job-table/job-table.component';
+import { HomeComponent } from './pages/home/home.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 
 import { MatCardModule } from '@angular/material/card';
@@ -20,12 +27,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
-import { HomeComponent } from './pages/home/home.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import { FormDataComponent } from './components/form-data/form-data.component';
-import { MatSelectModule } from '@angular/material/select';
-import { FormComponent } from './pages/form/form.component';
-import { EditJobComponent } from './components/edit-job/edit-job.component';
+
 
 
 @NgModule({
@@ -38,6 +41,8 @@ import { EditJobComponent } from './components/edit-job/edit-job.component';
     FormDataComponent,
     FormComponent,
     EditJobComponent,
+    JobTableComponent,
+    
   ],
   imports: [
     BrowserModule,
