@@ -60,4 +60,12 @@ form {
     gap: 1rem;
 }
 
+@media screen and (max-width: 425px) {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
 

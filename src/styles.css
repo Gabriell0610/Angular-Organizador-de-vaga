@@ -23,3 +23,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 .validate-form {
     color: rgb(226, 37, 37);
 }
+
+.msg-sucess {
+    background-color: #28a745;
+    color: #fff;
+}

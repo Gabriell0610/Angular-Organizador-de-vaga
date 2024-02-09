@@ -39,9 +39,10 @@ export class JobOpeningsService {
 
   showMensage(msg: string) {
     this.snackBar.open(msg, '',{
-      duration: 3000,
+      duration: 2000,
       horizontalPosition: 'right',
-      verticalPosition: 'top'
+      verticalPosition: 'top',
+      panelClass: ['msg-sucess']
     })
   }
 }
