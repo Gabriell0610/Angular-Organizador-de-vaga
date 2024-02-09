@@ -1,40 +1,28 @@
 {
   "JobOpenings": [
     {
-      "id": "7af2",
-      "jobTitle": "Desenvolvedor BackEnd",
-      "companyName": "Google",
-      "applicationDate": "2024-02-06",
-      "applicationWebSite": "Eureca",
-      "stage": "candidatura",
+      "jobTitle": "Desenvolvimento Front-End",
+      "companyName": "Vflows",
+      "applicationDate": "2024-02-09",
+      "applicationWebSite": "Solides Jobs",
+      "stage": "Em Andamento",
       "experienceLevel": "Estágio",
       "location": "Remoto",
-      "techRecruiter": "Paulo Andrade",
-      "applicationUrl": ""
+      "techRecruiter": "",
+      "applicationUrl": "https://beherevflows.vagas.solides.com.br/vaga/351427?origem=linkedin",
+      "id": "6345"
     },
     {
-      "jobTitle": "Social Media gh",
-      "companyName": "Aninha",
-      "applicationDate": "2024-02-09",
-      "applicationWebSite": "gupy",
-      "stage": "candidatura",
-      "experienceLevel": "Estágio",
+      "id": "2b66",
+      "jobTitle": "Social Media",
+      "companyName": "Stone",
+      "applicationDate": "2024-02-06",
+      "applicationWebSite": "Gupy",
+      "stage": "Finalizado",
+      "experienceLevel": "Junior",
       "location": "Presencial",
       "techRecruiter": "",
-      "applicationUrl": "",
-      "id": "dffe"
-    },
-    {
-      "jobTitle": "Desenvolvedor ",
-      "companyName": "Google",
-      "applicationDate": "2024-02-06",
-      "applicationWebSite": "Eureca",
-      "stage": "candidatura",
-      "experienceLevel": "Estágio",
-      "location": "Remoto",
-      "techRecruiter": "Paulo Andrade",
-      "applicationUrl": "",
-      "id": "9f40"
+      "applicationUrl": ""
     }
   ]
 }

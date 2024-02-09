@@ -9,7 +9,7 @@
                 job.jobTitle
               }}</a>
               <button class="material-icons del-btn" (click)="delCard(job.id)">
-                close
+                delete
               </button>
             </div>
 
@@ -43,5 +43,49 @@
       </div>
     </div>
   </mat-tab>
-  <mat-tab label="Finalizadas">Content 2</mat-tab>
+
+  <mat-tab label="Finalizadas">
+    <div class="container-card">
+      <div class="card" *ngFor="let job of finalizedJobOpenings">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <div class="group">
+              <a routerLink="job/table/{{job.id}}" class="title-job">{{
+                job.jobTitle
+              }}</a>
+              <button class="material-icons del-btn" (click)="delCard(job.id)">
+                delete
+              </button>
+            </div>
+
+            <div class="group">
+              <span class="company">{{ job.companyName }}</span>
+              <span class="grid-icon">
+                <i class="material-icons">{{ getIcon(job.location) }}</i
+                >{{ job.location }}</span
+              >
+            </div>
+
+            <div class="group">
+              <span class="company-webSite">{{ job.applicationWebSite }}</span>
+              <span class="grid-icon"
+                ><i class="material-icons"> work </i
+                >{{ job.experienceLevel }}</span
+              >
+            </div>
+
+            <div class="group">
+              <span class="date">{{
+                job.applicationDate | date : "dd/MM/yyyy"
+              }}</span>
+              <a routerLink="job/edit/{{ job.id }}" class="edit grid-icon">
+                <i class="material-icons">edit</i>
+                Editar
+              </a>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </mat-tab>
 </mat-tab-group>

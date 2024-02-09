@@ -15,7 +15,7 @@ import { FormComponent } from './pages/form/form.component';
 import { EditJobComponent } from './components/edit-job/edit-job.component';
 import { JobTableComponent } from './pages/job-table/job-table.component';
 import { HomeComponent } from './pages/home/home.component';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
 
 
 import { MatCardModule } from '@angular/material/card';

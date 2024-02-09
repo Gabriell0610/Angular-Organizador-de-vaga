@@ -1,0 +1,61 @@
+
+<h2 class="title">Todas as informações sobre a vaga:</h2>
+<h2 class="color-title">{{ titleJob }}</h2>
+
+<div class="container-card">
+  <div class="card" *ngFor="let vacancy of jobOpenings">
+    <mat-card class="example-card">
+      <mat-card-content>
+        <div class="group">
+          <h3>
+            Nome da vaga: <span class="title-job">{{ vacancy.jobTitle }}</span>
+          </h3>
+          <div class="grid-icon url">
+            <i class="material-icons">link</i>
+            <a href="{{ vacancy.applicationUrl }}">Acesse a vaga aqui</a>
+          </div>
+        </div>
+
+        <div class="group">
+          <h3>
+            Empresa Contratante:
+            <span class="company">{{ vacancy.companyName }}</span>
+          </h3>
+          <span class="grid-icon">
+            <i class="material-icons">{{ getIcon(vacancy.location) }}</i
+            >{{ vacancy.location }}</span
+          >
+        </div>
+
+        <div class="group">
+          <h3>
+            Site de Candidatura:
+            <span class="company-webSite">{{
+              vacancy.applicationWebSite
+            }}</span>
+          </h3>
+          <span class="grid-icon"
+            ><i class="material-icons"> work </i
+            >{{ vacancy.experienceLevel }}</span
+          >
+        </div>
+
+        <div class="group">
+          <h3>
+            Data da Candidatura:
+            <span class="date">{{
+              vacancy.applicationDate | date : "dd/MM/yyyy"
+            }}</span>
+          </h3>
+        </div>
+
+        <div class="group">
+          <h3>
+            Processo Seletivo:
+            <span class="stage">{{ vacancy.stage }}</span>
+          </h3>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

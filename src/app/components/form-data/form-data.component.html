@@ -1,6 +1,6 @@
 <main>
   <form [formGroup]="jobForm" #formDir="ngForm">
-    <h2>{{title}}</h2>
+    <h2>{{ title }}</h2>
     <div class="form-group">
       <div class="input-container">
         <label for="name">Nome da Vaga</label>
@@ -10,6 +10,7 @@
           placeholder="Digite o nome da vaga"
           formControlName="jobTitle"
           required
+          maxlength="26"
         />
         <div *ngIf="jobTitle.invalid && formDir.submitted">
           <p class="validate-form">Campo obrigatório</p>
@@ -61,8 +62,8 @@
         <label for="stage">Etapa da vaga</label>
         <select formControlName="stage">
           <option value="" disabled selected hidden>Selecione uma opção</option>
-          <option value="candidatura" selected>Candidatura</option>
-          <option value="finalizado">Finalizado</option>
+          <option value="Em Andamento" selected>Em Andamento</option>
+          <option value="Finalizado">Finalizado</option>
         </select>
         <div *ngIf="stage.invalid && formDir.submitted">
           <p class="validate-form">Campo obrigatório</p>

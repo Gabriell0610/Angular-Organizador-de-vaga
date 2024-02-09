@@ -7,4 +7,20 @@
 
 p { 
     text-align: center;
+    margin: 0;
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+   p{
+    font-size: .8rem;
+   }
+}
+
+@media screen and (min-width: 426px) and (max-width: 480px) {
+    p{
+        font-size: 1rem;
+    }
+  
 }

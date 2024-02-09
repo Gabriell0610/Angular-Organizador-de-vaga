@@ -71,7 +71,8 @@ i {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    color: rgb(219, 55, 55);
+    color: #333;
+    font-size: 1.2rem;
 }
 
 .edit {
@@ -170,7 +171,7 @@ i {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .container-card {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 1rem;
     }
 

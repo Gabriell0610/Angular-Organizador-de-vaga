@@ -20,7 +20,8 @@ export class FormDataComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobForm = new FormGroup( {
-      jobTitle: new FormControl(this.jobData ? this.jobData.jobTitle : '', Validators.required),
+      jobTitle: new FormControl(this.jobData ? this.jobData.jobTitle : '', 
+      [Validators.required]),
       companyName: new FormControl(this.jobData ? this.jobData.companyName : '',Validators.required),
       applicationDate: new FormControl(this.jobData ? this.jobData.applicationDate : '', Validators.required),
       applicationWebSite: new FormControl(this.jobData ? this.jobData.applicationWebSite : '', Validators.required),

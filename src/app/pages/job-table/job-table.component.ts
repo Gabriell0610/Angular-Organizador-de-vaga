@@ -10,24 +10,34 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./job-table.component.css']
 })
 export class JobTableComponent implements OnInit {
-  jobOpenings!: JobOpenings;
-  displayedColumns = ['Nome da Vaga', 'Nome da empresa', 'Data', 'Site de Candidatura', 'Etapa', 
-  'Nível de experiencia', 'Localização', 'Recrutador', 'Url da Vaga']
-  
+  jobOpenings: JobOpenings[] = []
+
+  titleJob: string = ''
   constructor(
     private activatedRoute: ActivatedRoute,
     private route: Router,
-    private jobOpeningsService: JobOpeningsService
+    private jobOpeningService: JobOpeningsService
   ) { }
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.paramMap.get('id')
 
-    this.jobOpeningsService.getById(id).subscribe((vacancy) => {
-
-      console.log(this.jobOpenings)
+    this.jobOpeningService.getById(id).subscribe((vacancy) => {
+        this.jobOpenings.push(vacancy)
+        this.titleJob = vacancy.jobTitle
+        console.log(vacancy)
     })
   
   }
+
+  getIcon(location: string): string {
+    if (location.toLowerCase() === 'presencial') {
+      return 'apartment'; // Ícone para vagas presenciais
+    } else {
+      return 'computer'; // Ícone para vagas remotas ou híbridas
+    }
+  }
+
+
 
 }
