@@ -11,8 +11,14 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class JobTableComponent implements OnInit {
   jobOpenings: JobOpenings[] = []
+  linkMsg: string = ''
+
+  linkEmpyt: string = ''
 
   titleJob: string = ''
+
+  finally: string = ''
+ 
   constructor(
     private activatedRoute: ActivatedRoute,
     private route: Router,
@@ -25,7 +31,16 @@ export class JobTableComponent implements OnInit {
     this.jobOpeningService.getById(id).subscribe((vacancy) => {
         this.jobOpenings.push(vacancy)
         this.titleJob = vacancy.jobTitle
-        console.log(vacancy)
+        // console.log(vacancy)
+
+        if(vacancy.applicationUrl === '') {
+          this.linkMsg = 'Sem Link'
+          this.linkEmpyt = 'link-empty a'
+        }else {
+          this.linkMsg = 'Acesse a vaga aqui'
+        }
+
+        this.finally = vacancy.stage === 'Finalizado' ? 'stage-finally' : ''
     })
   
   }

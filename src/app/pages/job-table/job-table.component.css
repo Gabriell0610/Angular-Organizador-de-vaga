@@ -76,6 +76,7 @@ span {
     padding: .15rem .3rem;
     color: #161616;
     background-color: #1de750;
+    border-radius: 4px;
 }
 
 .stage-finally {
@@ -101,7 +102,6 @@ span {
     cursor: pointer;
 }
 
-
 .url a {
     color: #0494d6;
     font-size: 1rem;
@@ -112,6 +112,12 @@ span {
     cursor: pointer;
     color: #161616;
     font-size: 1.1rem;
+}
+
+.link-empty a {
+    color: #333;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 

@@ -53,9 +53,11 @@ export class ListJobsComponent implements OnInit {
     this.jobOpeningService.deljob(id).subscribe(() =>{
       this.jobOpeningService.showMensage('Vaga deletada com sucesso!')
     })
-    this.jobOpenings = this.jobOpenings.filter((job) => {
-      return job.id !== id
-    })
+
+    //Atualizando os arrays
+    this.jobOpenings = this.jobOpenings.filter((job) => job.id !== id );
+
+    this.finalizedJobOpenings = this.finalizedJobOpenings.filter((job) => job.id !== id);
   }
 
 }

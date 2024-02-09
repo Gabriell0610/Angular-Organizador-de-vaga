@@ -1,16 +1,3 @@
 {
-  "JobOpenings": [
-    {
-      "jobTitle": "Desenvolvimento Front-End",
-      "companyName": "Vflows",
-      "applicationDate": "2024-02-09",
-      "applicationWebSite": "Solides Jobs",
-      "stage": "Em Andamento",
-      "experienceLevel": "Estágio",
-      "location": "Remoto",
-      "techRecruiter": "",
-      "applicationUrl": "https://beherevflows.vagas.solides.com.br/vaga/351427?origem=linkedin",
-      "id": "6345"
-    }
-  ]
+  "JobOpenings": []
 }

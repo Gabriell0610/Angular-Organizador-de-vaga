@@ -6,13 +6,14 @@
   <div class="card" *ngFor="let vacancy of jobOpenings">
     <mat-card class="example-card">
       <mat-card-content>
+
         <div class="group">
           <h3>
             Nome da vaga: <span class="title-job">{{ vacancy.jobTitle }}</span>
           </h3>
-          <div class="grid-icon url">
+          <div class="grid-icon url" [ngClass]="linkEmpyt">
             <i class="material-icons">link</i>
-            <a href="{{ vacancy.applicationUrl }}">Acesse a vaga aqui</a>
+            <a href="{{ vacancy.applicationUrl }}">{{linkMsg}}</a>
           </div>
         </div>
 
@@ -51,10 +52,11 @@
 
         <div class="group">
           <h3>
-            Processo Seletivo:
-            <span class="stage">{{ vacancy.stage }}</span>
+            Etapa da Vaga:
+            <span [ngClass]="finally" class="stage">{{ vacancy.stage }}</span>
           </h3>
         </div>
+
       </mat-card-content>
     </mat-card>
   </div>

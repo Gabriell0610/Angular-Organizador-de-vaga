@@ -12,7 +12,7 @@ import { ListJobsComponent } from './components/list-jobs/list-jobs.component';
 import { FormDataComponent } from './components/form-data/form-data.component';
 import { MatSelectModule } from '@angular/material/select';
 import { FormComponent } from './pages/form/form.component';
-import { EditJobComponent } from './components/edit-job/edit-job.component';
+import { EditJobComponent } from './pages/edit-job/edit-job.component';
 import { JobTableComponent } from './pages/job-table/job-table.component';
 import { HomeComponent } from './pages/home/home.component';
 
