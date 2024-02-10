@@ -3,13 +3,13 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { JobOpenings } from '../shared/interfaces/JobOpenings'
 import { MatSnackBar } from '@angular/material/snack-bar'
-import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class JobOpeningsService {
-  baseUrl = environment.baseUrl
+  baseUrl = 'http://localhost:3000/JobOpenings'
 
   constructor(
     private snackBar: MatSnackBar,
