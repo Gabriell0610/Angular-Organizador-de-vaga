@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { JobOpeningsService } from 'src/app/service/job-openings.service';
-import { JobOpenings } from '../../shared/interfaces/JobOpenings'
+import { JobOpenings } from '../../shared/interfaces/JobOpenings';
+
 
 @Component({
   selector: 'app-list-jobs',
@@ -12,7 +13,8 @@ export class ListJobsComponent implements OnInit {
   jobOpenings: JobOpenings[] = []
   finalizedJobOpenings: JobOpenings[] = []
 
-  //Criar um array para cada tipo de aba no html
+  //Não esquecer de Criar um array para cada tipo de aba no html ou refatorar o código 
+
 
   constructor(private jobOpeningService :JobOpeningsService) { }
 
@@ -25,8 +27,7 @@ export class ListJobsComponent implements OnInit {
       this.finalizedJobOpenings = this.filterStageVacancy()    
 
       //O array jobOpenings filtra Vagas que tem o stage diferente de 'Finalizado',
-      //E esse array será percorrida pela aba de Em Andamento no HTML
-
+      //E esse array será percorrido pela aba de 'Em Andamento' no HTML
       this.jobOpenings = this.jobOpenings.filter((job) => {
         return job.stage !== "Finalizado"
       })

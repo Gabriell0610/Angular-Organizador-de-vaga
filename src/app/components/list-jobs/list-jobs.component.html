@@ -5,9 +5,13 @@
         <mat-card class="example-card">
           <mat-card-content>
             <div class="group">
-              <a routerLink="job/table/{{job.id}}" class="title-job">{{
-                job.jobTitle
-              }}</a>
+              <a
+                routerLink="job/table/{{ job.id }}"
+                class="title-job"
+                matTooltip="mais informações"
+                matTooltipPosition="above"
+                >{{ job.jobTitle }}</a
+              >
               <button class="material-icons del-btn" (click)="delCard(job.id)">
                 delete
               </button>
@@ -50,9 +54,13 @@
         <mat-card class="example-card">
           <mat-card-content>
             <div class="group">
-              <a routerLink="job/table/{{job.id}}" class="title-job">{{
-                job.jobTitle
-              }}</a>
+              <a
+                routerLink="job/table/{{ job.id }}"
+                class="title-job"
+                matTooltip="mais informações"
+                matTooltipPosition="above"
+                >{{ job.jobTitle }}</a
+              >
               <button class="material-icons del-btn" (click)="delCard(job.id)">
                 delete
               </button>
