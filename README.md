@@ -20,8 +20,6 @@ Nesse projeto eu utilizei:
 ### Atualizações 👩🏻‍💻
 O projeto será atualizado para versões mais recentes e terá um backend mais robusto. Pretendo criar uma API com Node e utilizar Banco de dados para o gerenciamento das vagas.
 
-A interface vai ser atualizada com SASS ou Talwind e Angular Material. E também quero criar um cadastramento e login de usuários.
-
-
+**Toda** a interface vai ser atualizada com SASS ou Talwind e Angular Material. E também quero criar um cadastramento e login de usuários.
 
 ### Acesse o projeto no link abaixo

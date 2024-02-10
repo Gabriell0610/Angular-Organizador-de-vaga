@@ -80,6 +80,11 @@ i {
     color: #333;
 }
 
+.material-symbols-outlined {
+    color: black;
+    font-size: 1.4rem;
+}
+
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
