@@ -32,4 +32,4 @@ Como eu to utilizando o Json Server para uma API fake, o projeto não possui um 
 - Ter o angular instalado na sua máquina, de preferencia o 14
 - Fazer o git clone desse repositório na sua máquina
 - Rodar o servidor do json server utilizando o comando **npm run server**, no terminal
-- Rodar o projeto do angular utilizando **ng server** no terminal, de preferencia o terminal bash.
+- Rodar o projeto do angular utilizando **ng serve** no terminal, de preferencia o terminal bash.
