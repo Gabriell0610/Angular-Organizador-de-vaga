@@ -4,7 +4,7 @@ Quis criar um projeto que fosse incluir todos os conceitos estudados em Angular.
 
 ## Sobre o projeto 🧵
 
-Esse projeto consiste em um organizador de vagas, basta preencher o formulário com as caractéristicas da vaga e um card será criado na págna Home, deixando as informações visualemente agradaveis.
+Esse projeto consiste em um organizador de vagas, basta preencher o formulário com as caractéristicas da vaga e um card será criado na página Home, deixando as informações visualemente agradaveis.
 
 Ao clicar no nome da vaga, uma página contendo as demais características será aberto.
 Também é possível **editar** e **deletar** a vaga.
