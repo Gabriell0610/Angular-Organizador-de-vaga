@@ -4,7 +4,7 @@ Quis criar um projeto que fosse incluir todos os conceitos estudados em Angular.
 
 ## Sobre o projeto 🧵
 
-Esse projeto consiste em um organizador de vagas, basta preencher o formulário com as caractéristicas da vaga e um card será criado na página Home, deixando as informações visualemente agradaveis.
+Esse projeto consiste em um organizador de vagas, basta preencher o formulário com as caractéristicas da vaga e um card será criado na página Home, deixando as informações visualmente agradáveis.
 
 Ao clicar no nome da vaga, uma página contendo as demais características será aberto.
 Também é possível **editar** e **deletar** a vaga.
@@ -27,7 +27,7 @@ O projeto será atualizado para versões mais recentes e terá um backend mais r
 
 ### Como utilizar o projeto 📁
 
-Como eu to utilizando o Json Server para uma API fake, o projeto não possui um servidor completo. Então para quem quiser testar o projeto basta seguir alguns passos
+Como eu estou utilizando o Json Server para uma API fake, o projeto não possui um servidor completo. Então para quem quiser testar o projeto basta seguir alguns passos
 
 - Ter o angular instalado na sua máquina, de preferencia o 14
 - Fazer o git clone desse repositório na sua máquina
